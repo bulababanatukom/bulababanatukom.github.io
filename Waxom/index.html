@@ -29,11 +29,12 @@
 </head>
 
 <body>
+ <div class="preloader"><div class="pulse"></div></div>
 	<div id="my-page">
       <div id="my-header" style="background-image: url(img/bg_header.png);">
       	<div class="wrapper">
       		<div class="wrapper-content">
-      			<header class="header">
+      			<header class="header" id="home">
       				<div class="header-logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
       				<a href="#my-menu" class="hamburger hamburger--spin">
                         <span class="hamburger-box">
@@ -42,42 +43,42 @@
                     </a>
                     <nav id="my-menu">
                     	<ul>
-                    		<li><a href="#">Home</a></li>
-                    		<li class="mm-listitem_selected"><a href="#">About Us</a></li>
-                    		<li><a href="#">Portfolio</a></li>
-                    		<li><a href="#">Features</a></li>
-                    		<li><a href="#">Blog</a></li>
-                    		<li><a href="#">Pricing</a></li>
-                    		<li><a href="#">Shortcodes</a></li>
-                    		<li><a href="#">Contact</a></li>
+                    		<li><a href="#home" data-targer="anchor">Home</a></li>
+                    		<li><a href="#about">About Us</a></li>
+                    		<li><a href="#portfolio" data-target="anchor" >Portfolio</a></li>
+                    		<li><a href="#features" data-target="anchor" >Features</a></li>
+                    		<li><a href="#blog" data-target="anchor" >Blog</a></li>
+                    		<li><a href="#Pricing" data-target="anchor" >Pricing</a></li>
+                    		<li><a href="#Shortcodes" data-target="anchor" >Shortcodes</a></li>
+                    		<li><a href="#Contact" data-target="anchor" >Contact</a></li>
                     	</ul>
                     </nav>
                     <nav class="navigation">
                     	<li class="menu_item">
-                    		<a href="#" class="menu_link">Home</a>
+                    		<a href="#home" class="menu_link" data-target="anchor">Home</a>
                     	</li>
                     	<li class="menu_item">
-                    		<a href="#" class="menu_link active">About Us</a>
+                    		<a href="#about" class="menu_link active" data-target="anchor" >About Us</a>
                     	</li>
                     	<li class="menu_item">
-                    		<a href="#" class="menu_link">Portfolio</a>
+                    		<a href="#portfolio" class="menu_link" data-target="anchor" >Portfolio</a>
                     	</li>
                     	<li class="menu_item">
-                    		<a href="#" class="menu_link">Features</a>
+                    		<a href="#features" class="menu_link" data-target="anchor" >Features</a>
                     	</li>
                     	<li class="menu_item">
-                    		<a href="#" class="menu_link">Blog</a>
+                    		<a href="#blog" class="menu_link" data-target="anchor" >Blog</a>
                     	</li>
                     	<li class="menu_item">
-                    		<a href="#" class="menu_link">Pricing</a>
+                    		<a href="#Pricing" class="menu_link" data-target="anchor" >Pricing</a>
                     	</li>
                     	<li class="menu_item">
-                    		<a href="#" class="menu_link">Shortcodes</a>
+                    		<a href="#Shortcodes" class="menu_link" data-target="anchor" >Shortcodes</a>
                     	</li>
                     	<li class="menu_item">
-                    		<a href="#" class="menu_link">Contact</a>
+                    		<a href="#Contact" class="menu_link" data-target="anchor" >Contact</a>
                     	</li>
-                    	<div class="navigation-icons">
+                    	<div class="navigation-icons" >
                     		<span class="icon-icon-cart"><span class="path1"></span><span class="path2"></span></span>
                     		<span class="icon-icon-search"><span class="path1"></span><span class="path2"></span></span>
 
@@ -89,7 +90,7 @@
 
 
 	      			<div class="carousel-header-item">
-	      				<div class="carousel-header-item-subtitle">Unique and Modern Design</div>
+	      				<div class="carousel-header-item-subtitle" >Unique and Modern Design</div>
 	      				<div class="carousel-header-item-title">Portfolio PSD Template1</div>
 	      				<div class="carousel-header-item-content">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</div>
 	      				<button class="btn-main btn-slider">Get Started</button>
@@ -118,14 +119,7 @@
 	      				<div class="carousel-header-item-content">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</div>
 	      				<button class="btn-main btn-slider">Get Started</button>
 	      			</div>
-	      			
-
-      			
-      			
-      			</div>
-      			
-
-      			
+      			</div>	
       		</div>
       	</div>
       </div>
@@ -133,7 +127,7 @@
       	<section class="s-portfolio">
       		<div class="wrapper">
       			<div class="wrapper-content">
-      				<div class="container container-portfolio">
+      				<div class="container container-portfolio" id="portfolio">
       					<div class="row">
 
       						<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -201,7 +195,7 @@
       			</div>
       		</div>
       	</section>
-      	<section class="s-realization">
+      	<section class="s-realization" id="features">
       		<div class="wrapper">
       			<div class="wrapper-content">
       				<div class="realization-block">
@@ -219,6 +213,7 @@
       	<section class="s-wp">
       		<div class="wrapper">
       			<div class="wrapper-content">
+              <div class="btn_up"></div>
       				<div class="wp-container">
       					<div class="wp-container-block-left">
       						<div class="wp-container-block-left-title">
@@ -236,10 +231,185 @@
       		</div>
       	</section>
       	<section class="s-filter">
+          <div class="wrapper">
+            <div class="wrapper-content">
+              <div class="main-title">Our Latest Projects.</div>
+              <div class="main-content">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+              <div class="mixer-buttons">
+                <button type="button" class="btn-mix" data-filter="all">All</button>
+                <button type="button" class="btn-mix" data-filter=".category-a">Web Design</button>
+                <button type="button" class="btn-mix" data-filter=".category-b">Mobile App</button>
+                <button type="button" class="btn-mix" data-filter=".category-c">Illustration</button>
+                <button type="button" class="btn-mix" data-filter=".category-d">Photography</button>
+              </div>
+
+
+              <div class="mixer" >
+                <div class="container container-mixer">
+                  <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="mix category-d mixer-block" data-order="1">
+                        <div class="mixer-block-up" style="background-image: url(img/mixer/block1.png);">
+                          <div class="mixer-block-up-icons">
+                            <span class="icon-link"><span class="path1"></span><span class="path2"></span></span>
+                            <span class="icon-lupa"><span class="path1"></span><span class="path2"></span></span>
+                          </div>
+                          <div class="mixer-block-up-tr"></div>
+                        </div>
+                        <div class="mixer-block-down">
+                          <div class="mixer-block-down-title">Claritas Etiam Processus</div>
+                          <div class="mixer-block-down-jobs">Photography, Nature</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="mix category-b category-c category-a mixer-block" data-order="2">
+                        <div class="mixer-block-up" style="background-image: url(img/mixer/block2.png);">
+                          <div class="mixer-block-up-icons">
+                            <span class="icon-link"><span class="path1"></span><span class="path2"></span></span>
+                            <span class="icon-lupa"><span class="path1"></span><span class="path2"></span></span>
+                          </div>
+                          <div class="mixer-block-up-tr"></div>
+                        </div>
+                        <div class="mixer-block-down">
+                          <div class="mixer-block-down-title">Quam Nutamus Farum</div>
+                          <div class="mixer-block-down-jobs">Graphic Design, Mock-Up</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="mix category-d mixer-block" data-order="3">
+                        <div class="mixer-block-up" style="background-image: url(img/mixer/block3.png);">
+                          <div class="mixer-block-up-icons">
+                            <span class="icon-link"><span class="path1"></span><span class="path2"></span></span>
+                            <span class="icon-lupa"><span class="path1"></span><span class="path2"></span></span>
+                          </div>
+                          <div class="mixer-block-up-tr"></div>
+                        </div>
+                        <div class="mixer-block-down">
+                          <div class="mixer-block-down-title">Usus Legentis Videntur</div>
+                          <div class="mixer-block-down-jobs">Photography, Holiday</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="mix category-d mixer-block" data-order="4">
+                        <div class="mixer-block-up" style="background-image: url(img/mixer/block4.png);">
+                          <div class="mixer-block-up-icons">
+                            <span class="icon-link"><span class="path1"></span><span class="path2"></span></span>
+                            <span class="icon-lupa"><span class="path1"></span><span class="path2"></span></span>
+                          </div>
+                          <div class="mixer-block-up-tr"></div>
+                        </div>
+                        <div class="mixer-block-down">
+                          <div class="mixer-block-down-title">Claritas Etiam Processus</div>
+                          <div class="mixer-block-down-jobs">Photography, Nature</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="mix category-b category-c category-a mixer-block" data-order="5">
+                        <div class="mixer-block-up" style="background-image: url(img/mixer/block5.png);">
+                          <div class="mixer-block-up-icons">
+                            <span class="icon-link"><span class="path1"></span><span class="path2"></span></span>
+                            <span class="icon-lupa"><span class="path1"></span><span class="path2"></span></span>
+                          </div>
+                          <div class="mixer-block-up-tr"></div>
+                        </div>
+                        <div class="mixer-block-down">
+                          <div class="mixer-block-down-title">Quam Nutamus Farum</div>
+                          <div class="mixer-block-down-jobs">Graphic Design, Mock-Up</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="mix category-d mixer-block" data-order="6">
+                        <div class="mixer-block-up" style="background-image: url(img/mixer/block6.png);">
+                          <div class="mixer-block-up-icons">
+                            <span class="icon-link"><span class="path1"></span><span class="path2"></span></span>
+                            <span class="icon-lupa"><span class="path1"></span><span class="path2"></span></span>
+                          </div>
+                          <div class="mixer-block-up-tr"></div>
+                        </div>
+                        <div class="mixer-block-down">
+                          <div class="mixer-block-down-title">Usus Legentis Videntur</div>
+                          <div class="mixer-block-down-jobs">Photography, Holiday</div>
+                        </div>
+                      </div>
+                    </div>
+
+                     <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="mix category-d category-b mixer-block n-w-n" data-order="7">
+                        <div class="mixer-block-up" style="background-image: url(img/mixer/block1.png);">
+                          <div class="mixer-block-up-icons">
+                            <span class="icon-link"><span class="path1"></span><span class="path2"></span></span>
+                            <span class="icon-lupa"><span class="path1"></span><span class="path2"></span></span>
+                          </div>
+                          <div class="mixer-block-up-tr"></div>
+                        </div>
+                        <div class="mixer-block-down">
+                          <div class="mixer-block-down-title">Claritas Etiam Processus</div>
+                          <div class="mixer-block-down-jobs">Photography, Nature</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="mix category-b category-a mixer-block n-w-n" data-order="8">
+                        <div class="mixer-block-up" style="background-image: url(img/mixer/block2.png);">
+                          <div class="mixer-block-up-icons">
+                            <span class="icon-link"><span class="path1"></span><span class="path2"></span></span>
+                            <span class="icon-lupa"><span class="path1"></span><span class="path2"></span></span>
+                          </div>
+                          <div class="mixer-block-up-tr"></div>
+                        </div>
+                        <div class="mixer-block-down">
+                          <div class="mixer-block-down-title">Quam Nutamus Farum</div>
+                          <div class="mixer-block-down-jobs">Graphic Design, Mock-Up</div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                      <div class="mix category-a category-b mixer-block n-w-n" data-order="9">
+                        <div class="mixer-block-up" style="background-image: url(img/mixer/block4.png);">
+                          <div class="mixer-block-up-icons">
+                            <span class="icon-link"><span class="path1"></span><span class="path2"></span></span>
+                            <span class="icon-lupa"><span class="path1"></span><span class="path2"></span></span>
+                          </div>
+                          <div class="mixer-block-up-tr"></div>
+                        </div>
+                        <div class="mixer-block-down">
+                          <div class="mixer-block-down-title">Claritas Etiam Processus</div>
+                          <div class="mixer-block-down-jobs">Photography, Nature</div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                </div>
+
+               
+               
+               
+
+              </div>
+              <p class="btn-main btn-filter">Load More</p>
+            </div>
+          </div>
       	</section>
-      	<section class="s-video" style="background-image: url(img/video.png);">
+      	<section class="s-video" style="background-image: url(img/video.png);" id="Shortcodes">
       		<div class="wrapper">
       			<div class="wrapper-content">
+
       				<div class="video-block">
       					<div class="video-block-play">
       						<img src="img/icon-play.png" alt="">
@@ -252,9 +422,245 @@
       			</div>
       		</div>
       	</section>
-      	
+        <section class="s-mobile">
+          <div class="wrapper">
+            <div class="wrapper-content">
+              <div class="container container-mobile">
+                <div class="row">
+                  <div class="col-lg-5 col-md-6  container-mobile-left" style="background-image: url(img/iphone-in-hand.png);"></div>
+                  <div class="col-lg-7 col-md-6 container-mobile-right">
+                    <div class="container-mobile-right-title">Excellent for Mobile Devices.</div>
+                    <div class="container-mobile-right-content">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</div>
+                    <ul class="container-mobile-right-list">
+                      <li><i class="fas fa-angle-right"></i>Nam liber tempor cum soluta nobis eleifend option;</li>
+                      <li><i class="fas fa-angle-right"></i>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+                      <li><i class="fas fa-angle-right"></i>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+                      <li><i class="fas fa-angle-right"></i>Investigationes demonstraverunt lectores</li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="s-counters" id="about">
+          <div class="wrapper">
+            <div class="wrapper-content">
+             <div class="counter-container">
+
+                    <div class="count-block">
+                      <div class="count-block-icon">
+                        <span class="icon-peopls"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div id="counter">
+                        <div class="counter-value" data-count="3587">0</div>
+                      </div>
+                      <div class="count-block-content">Satisfied Clients</div>
+                    </div>
+
+                    <div class="count-block">
+                      <div class="count-block-icon">
+                        <span class="icon-tea"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div id="counter">
+                        <div class="counter-value" data-count="207">0</div>
+                      </div>
+                      <div class="count-block-content">Cups of coffee</div>
+                    </div>
+
+                    <div class="count-block">
+                      <div class="count-block-icon">
+                        <span class="icon-comment"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div id="counter">
+                        <div class="counter-value" data-count="2500">0</div>
+                      </div>
+                      <div class="count-block-content">Blog posts</div>
+                    </div>
+
+                    <div class="count-block">
+                      <div class="count-block-icon">
+                        <span class="icon-heart"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div id="counter">
+                        <div class="counter-value" data-count="873">0</div>
+                      </div>
+                      <div class="count-block-content">Likes</div>
+                    </div>
+
+                    <div class="count-block">
+                      <div class="count-block-icon">
+                        <span class="icon-ring"><span class="path1"></span><span class="path2"></span></span>
+                      </div>
+                      <div id="counter">
+                        <div class="counter-value" data-count="900">0</div>
+                      </div>
+                      <div class="count-block-content">We launched</div>
+                    </div>
+
+             
+            </div>
+          </div>
+        </section>
+
+      	<section class="s-recentposts" id="blog">
+         <div class="wrapper">
+           <div class="wrapper-content">
+             <div class="main-title">
+               Recent Posts.
+             </div>
+             <div class="main-content">
+               Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+             </div>
+             <div class="container container-recentposts">
+              <div class="row">
+                <div class="col-lg-4 col-md-4">
+                  <div class="recentposts-block">
+                    <div class="recentposts-block-up" style="background-image: url(img/recent1.png);">
+                      <div class="recentposts-block-up-calendar">
+                        <div class="recentposts-block-up-calendar-number">30</div>
+                        <div class="recentposts-block-up-calendar-month">Sep.</div>
+                      </div>
+                    </div>
+                    <div class="recentposts-block-down">
+                      <div class="recentposts-block-down-title">Lorem ipsum dolor sit amet</div>
+                      <div class="recentposts-block-down-content">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                      <a href="#" class="recentposts-block-down-more">Read More <img src="img/arrow-gold.png" alt=""></a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div class="recentposts-block">
+                    <div class="recentposts-block-up" style="background-image: url(img/recent2.png);">
+                      <div class="recentposts-block-up-calendar">
+                        <div class="recentposts-block-up-calendar-number">30</div>
+                        <div class="recentposts-block-up-calendar-month">Sep.</div>
+                      </div>
+                    </div>
+                    <div class="recentposts-block-down">
+                      <div class="recentposts-block-down-title">Lorem ipsum dolor sit amet</div>
+                      <div class="recentposts-block-down-content">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                      <a href="#" class="recentposts-block-down-more">Read More<img src="img/arrow-gold.png"></a>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <div class="recentposts-block">
+                    <div class="recentposts-block-up" style="background-image: url(img/recent3.png);">
+                      <div class="recentposts-block-up-calendar">
+                        <div class="recentposts-block-up-calendar-number">30</div>
+                        <div class="recentposts-block-up-calendar-month">Sep.</div>
+                      </div>
+                    </div>
+                    <div class="recentposts-block-down">
+                      <div class="recentposts-block-down-title">Lorem ipsum dolor sit amet</div>
+                      <div class="recentposts-block-down-content">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</div>
+                      <a href="#" class="recentposts-block-down-more">Read More<img src="img/arrow-gold.png"></a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             </div>
+
+           </div>
+         </div> 
+        </section>
+
+        <section class="s-partners" style="background-image: url(img/bg-partners.png);" id="Contact">
+          <div class="wrapper">
+            <div class="wrapper-content">
+              <div class="container-partners">
+                <div class="container-partners-left">
+                  <img src="img/partner1.png" alt="">
+                </div>
+                <div class="container-partners-middle-left">
+                  <img src="img/partner2.png" alt="">
+                </div>
+                <div class="container-partners-middle-right">
+                  <img src="img/partner3.png" alt="">
+                </div>
+                <div class="container-partners-right">
+                  <img src="img/partner4.png" alt="">
+                </div>
+              </div>
+            
+
+               
+
+
+
+
+            </div>
+          </div>
+        </section>
+
       </div>
-      <div id="my-footer">
+      <div id="my-footer" id="Pricing">
+        <div class="wrapper">
+          <div class="wrapper-content">
+            <div class="container container-footer">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 footerabout">
+                  <div class="footerabout-logo">
+                    <img src="img/logo.png" alt="">
+                  </div>
+                  <div class="footerabout-content">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.
+                  </div>
+                  <a href="#" class="footerabout-more">Read More <img src="img/arrowfooter.png" alt=""></a>
+                  
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 recentposts">
+                  <div class="recentposts-title">
+                    Recent Posts
+                  </div>
+                  <div class="recentposts-container">
+                    <div class="recentposts-container-data">September 08, 2015</div>
+                    <div class="recentposts-container-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+                  </div>
+                  <div class="recentposts-container">
+                    <div class="recentposts-container-data"><span>September 08, 2015</span></div>
+                    <div class="recentposts-container-content"><span>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</span></div>
+                  </div>
+                  <div class="recentposts-container">
+                    <div class="recentposts-container-data">September 08, 2015</div>
+                    <div class="recentposts-container-content">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</div>
+                  </div>
+
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 ourtwitter">
+                  <div class="ourtwitter-title">Our Twitter</div>
+                  <div class="ourtwitter-container">
+                    <div class="ourtwitter-container-content"><a href="#">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</div>
+                    <div class="ourtwitter-container-data">3 mins ago</div>
+                  </div>
+                  <div class="ourtwitter-container">
+                    <div class="ourtwitter-container-content">Mirum est <a href="#">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</div>
+                    <div class="ourtwitter-container-data">5 hours ago</div>
+                  </div>
+                  <div class="ourtwitter-container">
+                    <div class="ourtwitter-container-content">Soluta nobis option <a href="#" class="ourtwitter-container-content-link">bit.ly/1Hniso7</a></div>
+                    <div class="ourtwitter-container-data">20 days ago</div>
+                  </div>
+                  
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 dribllewidget">
+                  <div class="dribllewidget-title">Dribbble Widget</div>
+                  <div class="dribllewidget-container">
+                   <div class="dribllewidget-block" style="background-image: url(img/db1.png);"></div>
+                    <div class="dribllewidget-block" style="background-image: url(img/db2.png);"></div>
+                   <div class="dribllewidget-block" style="background-image: url(img/db3.png);"></div>
+                   <div class="dribllewidget-block" style="background-image: url(img/db4.png);"></div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       	
       </div>
    </div>
